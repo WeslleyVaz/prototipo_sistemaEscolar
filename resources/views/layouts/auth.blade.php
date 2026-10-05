@@ -10,5 +10,6 @@
 </head>
 <body class="auth-page">
     @yield('content')
+    <script src="{{ asset('sistema.js') }}" defer></script>
 </body>
 </html>

@@ -44,7 +44,7 @@
             </label>
 
             <div class="form-actions field-full">
-                <a class="btn btn-light-outline" href="#">Cancelar</a>
+                <a class="btn btn-light-outline" href="{{ route('saidas-antecipadas') }}">Cancelar</a>
                 <button class="btn btn-sesi" type="button">Registrar saída</button>
             </div>
         </form>

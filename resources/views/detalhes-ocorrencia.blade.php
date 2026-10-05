@@ -25,7 +25,7 @@
     </section>
 
     <div class="detail-actions">
-        <a class="btn btn-text" href="#"><i class="bi bi-arrow-left"></i> Voltar</a>
-        <a class="btn btn-sesi btn-small" href="#">Editar ocorrência</a>
+        <a class="btn btn-text" href="{{ route('consulta-ocorrencias') }}"><i class="bi bi-arrow-left"></i> Voltar</a>
+        <a class="btn btn-sesi btn-small" href="{{ route('registrar-ocorrencia') }}">Editar ocorrência</a>
     </div>
 @endsection

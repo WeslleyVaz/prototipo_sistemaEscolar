@@ -39,7 +39,7 @@
 
     <section class="section-heading-row">
         <h2>Últimas Ocorrências</h2>
-        <a class="btn btn-sesi" href="#">Registrar Ocorrência</a>
+        <a class="btn btn-sesi" href="{{ route('registrar-ocorrencia') }}">Registrar Ocorrência</a>
     </section>
 
     <div class="table-responsive data-table-wrap">

@@ -9,8 +9,8 @@
 
 @section('content')
     @php
-        $classes = [['1ªA', 42], ['2ªA', 67], ['3ªA', 39], ['6ªB', 88], ['7ªA', 59], ['9ªA', 77]];
-        $months = [['Abr', 38], ['Mai', 44], ['Jun', 54], ['Jul', 61], ['Ago', 74], ['Set', 66]];
+        $classes = [['1ªA', 8], ['2ªA', 14], ['3ªA', 10], ['6ªB', 18], ['7ªA', 12], ['9ªA', 16]];
+        $months = [['Abr', 38], ['Mai', 46], ['Jun', 57], ['Jul', 51], ['Ago', 73], ['Set', 63]];
     @endphp
 
     <p class="content-description">Indicadores e histórico das atividades escolares.</p>
@@ -40,7 +40,7 @@
                 @foreach ($classes as [$className, $value])
                     <div class="horizontal-chart-row">
                         <span>{{ $className }}</span>
-                        <span class="horizontal-track"><span style="width: {{ $value }}%"></span></span>
+                        <span class="horizontal-track"><span style="width: {{ $value / 20 * 100 }}%"></span></span>
                         <strong>{{ $value }}</strong>
                     </div>
                 @endforeach

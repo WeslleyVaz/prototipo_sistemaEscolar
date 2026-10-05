@@ -44,7 +44,7 @@
                     @foreach ($occurrences as $occurrence)
                         <tr>
                             @foreach ($occurrence as $value)
-                                <td>{{ $value }}</td>
+                                <td>@if ($loop->index === 2)<a class="table-detail-link" href="{{ route('detalhes-ocorrencia') }}">{{ $value }}</a>@else{{ $value }}@endif</td>
                             @endforeach
                         </tr>
                     @endforeach

@@ -3,13 +3,13 @@
 @section('title', 'Login Gestão')
 
 @section('content')
-    <main class="auth-stage auth-stage-login">
+    <main class="auth-stage auth-stage-login auth-stage-management">
         <header class="login-brand">
-            <span class="sesi-mark" aria-label="SESI">SESI</span>
+            <img class="auth-logo" src="{{ asset('sesi-logo.png') }}" alt="SESI" width="286" height="286">
         </header>
 
         <section class="login-panel" aria-labelledby="login-title">
-            <span class="login-emblem" aria-hidden="true"><i class="bi bi-shield-lock"></i></span>
+            <span class="login-emblem" aria-hidden="true"><i class="bi bi-shield-check"></i></span>
             <h1 id="login-title">Login gestão</h1>
 
             <form class="login-form">
@@ -26,7 +26,7 @@
                     <button class="input-action" type="button" aria-label="Mostrar senha"><i class="bi bi-eye"></i></button>
                 </div>
 
-                <button class="btn sesi-pill login-submit" type="button">Entrar</button>
+                <a class="btn sesi-pill login-submit" href="{{ route('dashboard-coordenacao') }}">Entrar</a>
             </form>
         </section>
     </main>

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('title', 'Alunos')
 @section('page-heading', 'Alunos')
@@ -22,10 +22,12 @@
         ];
     @endphp
 
-    <div class="students-title">
+    <main class="students-page">
+    <header class="students-title">
+        <a class="students-brand" href="{{ route('dashboard-inspetoras') }}" aria-label="Voltar ao painel"><img src="{{ asset('sesi-logo.png') }}" alt="SESI" width="286" height="286"></a>
         <i class="bi bi-people-fill" aria-hidden="true"></i>
         <h2>ALUNOS</h2>
-    </div>
+    </header>
 
     <div class="table-responsive data-table-wrap">
         <table class="table data-table students-table">
@@ -51,4 +53,5 @@
             </tbody>
         </table>
     </div>
+</main>
 @endsection

@@ -30,7 +30,7 @@
             <span class="visually-hidden">Data</span>
             <input class="form-control" type="text" value="12/10/2026">
         </label>
-        <a class="btn btn-sesi" href="#">Registrar Saída</a>
+        <a class="btn btn-sesi" href="{{ route('registrar-saida-antecipada') }}">Registrar Saída</a>
     </section>
 
     <div class="table-responsive data-table-wrap">

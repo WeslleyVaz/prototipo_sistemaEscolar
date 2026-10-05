@@ -5,12 +5,12 @@
 @section('content')
     <main class="auth-stage auth-stage-landing">
         <header class="landing-brand">
-            <span class="sesi-mark" aria-label="SESI">SESI</span>
+            <img class="auth-logo" src="{{ asset('sesi-logo.png') }}" alt="SESI" width="286" height="286">
         </header>
 
         <nav class="landing-actions" aria-label="Tipo de acesso">
-            <a class="btn sesi-pill" href="#">Inspetoras</a>
-            <a class="btn sesi-pill" href="#">Gestão</a>
+            <a class="btn sesi-pill" href="{{ route('login-inspetoras') }}">Inspetoras</a>
+            <a class="btn sesi-pill" href="{{ route('login-gestao') }}">Gestão</a>
         </nav>
     </main>
 @endsection

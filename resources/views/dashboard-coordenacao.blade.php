@@ -10,7 +10,7 @@
 @section('content')
     @php
         $monthlyOccurrences = [
-            ['Fev', 24], ['Mar', 35], ['Abr', 27], ['Mai', 48], ['Ago', 58], ['Set', 70],
+            ['Abr', 40], ['Mai', 57], ['Jun', 48], ['Jul', 70], ['Ago', 62], ['Set', 77],
         ];
     @endphp
 
@@ -60,8 +60,8 @@
         <article class="quick-actions-card">
             <h2>Acesso rápido</h2>
             <div class="quick-actions">
-                <a class="btn btn-sesi" href="#">Consultar ocorrências <i class="bi bi-arrow-right"></i></a>
-                <a class="btn btn-soft-red" href="#">Ver relatórios <i class="bi bi-arrow-right"></i></a>
+                <a class="btn btn-sesi" href="{{ route('consulta-ocorrencias') }}">Consultar ocorrências <i class="bi bi-arrow-right"></i></a>
+                <a class="btn btn-soft-red" href="{{ route('relatorios') }}">Ver relatórios <i class="bi bi-arrow-right"></i></a>
             </div>
             <p>Use os atalhos para consultar os registros e acompanhar os indicadores da escola.</p>
         </article>

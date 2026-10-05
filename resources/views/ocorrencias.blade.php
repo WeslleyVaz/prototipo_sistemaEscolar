@@ -16,33 +16,29 @@
             ['11/10/2026', '14:10', 'Matheus Henrique Lima', '9ªA', 'Dever de casa', 'Não realizou as tarefas solicitadas', 'Em análise'],
             ['11/10/2026', '15:45', 'Rafael Augusto Costa', '8ªA', 'Desentendimento', 'Desavença verbal no pátio externo', 'Resolvido'],
             ['10/10/2026', '11:30', 'Felipe Gabriel Martins', '7ªA', 'Saída de sala', 'Aluno saiu sem autorização', 'Pendente'],
-            ['10/10/2026', '14:20', 'Beatriz Souza Santos', '3ªB', 'Atraso', 'Atraso injustificado no retorno do intervalo', 'Resolvido'],
-            ['09/10/2026', '10:45', 'Lucas Silva Oliveira', '2°C', 'Uniforme incompleto', 'Acessório não permitido no uniforme', 'Resolvido'],
+            ['10/10/2026', '14:20', 'Beatriz Souza Santos', '3ªB', 'Atraso Retorno', 'Atraso injustificado no retorno do intervalo', 'Resolvido'],
+            ['09/10/2026', '10:45', 'Lucas Silva Oliveira', '2ªC', 'Uniforme incompleto', 'Acessório não permitido no uniforme', 'Resolvido'],
             ['09/10/2026', '16:15', 'Juliana Mendes Lima', '1ªA', 'Material ausente', 'Persistência na falta do livro de matemática', 'Em análise'],
         ];
     @endphp
 
     <div class="page-lead">
-        <p>Consulte e acompanhe as ocorrências registradas.</p>
-        <a class="btn btn-sesi" href="#">Nova Ocorrência</a>
+        <label class="search-field occurrence-search"><span class="visually-hidden">Pesquisar aluno ou RM</span><i class="bi bi-search" aria-hidden="true"></i><input class="form-control" type="search" placeholder="Pesquisar aluno ou RM..." data-table-search></label>
+        <a class="btn btn-sesi" href="{{ route('registrar-ocorrencia') }}">Nova Ocorrência</a>
     </div>
 
     <section class="filter-card" aria-label="Pesquisar e filtrar ocorrências">
-        <label class="search-field">
-            <span class="visually-hidden">Pesquisar aluno ou RM</span>
-            <i class="bi bi-search" aria-hidden="true"></i>
-            <input class="form-control" type="search" placeholder="Pesquisar aluno ou RM...">
-        </label>
+
         <label class="filter-field">
-            <span class="visually-hidden">Turma</span>
+            <span>TURMA</span>
             <select class="form-select"><option>Todas as Turmas</option></select>
         </label>
         <label class="filter-field">
-            <span class="visually-hidden">Tipo de ocorrência</span>
+            <span>TIPO DE OCORRÊNCIA</span>
             <select class="form-select"><option>Todos os Tipos</option></select>
         </label>
         <label class="filter-field">
-            <span class="visually-hidden">Data</span>
+            <span>DATA</span>
             <select class="form-select"><option>Selecione o Período</option></select>
         </label>
     </section>
