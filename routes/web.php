@@ -10,7 +10,8 @@ Route::view('/login-gestao', 'login-gestao')->name('login-gestao');
 Route::view('/dashboard-inspetoras', 'dashboard-inspetoras')->name('dashboard-inspetoras');
 Route::view('/dashboard-coordenacao', 'dashboard-coordenacao')->name('dashboard-coordenacao');
 
-Route::view('/alunos', 'alunos')->name('alunos');
+Route::view('/alunos', 'alunos', ['isManagement' => false])->name('alunos');
+Route::view('/alunos-gestao', 'alunos', ['isManagement' => true])->name('alunos-gestao');
 
 Route::view('/ocorrencias', 'ocorrencias')->name('ocorrencias');
 Route::view('/registrar-ocorrencia', 'registrar-ocorrencia')->name('registrar-ocorrencia');

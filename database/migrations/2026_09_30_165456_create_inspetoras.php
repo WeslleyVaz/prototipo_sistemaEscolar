@@ -10,7 +10,8 @@ return new class extends Migration
     {
         Schema::create('inspetoras', function (Blueprint $table) {
             $table->id();
-            $table->string('nome_inspetora', 100);
+            $table->string('cpf', 11)->unique();
+            $table->string('senha', 72);
         });
     }
 
